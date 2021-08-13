@@ -1,12 +1,16 @@
 function show(){
-    console.log("odd numbers are:");
-    for(let i=0;i<20;i++){
-        if(i%2!=0){
-            console.log(i);
+    
+    console.log("odd numbers are:")
+    for(var i=1;i<20;i+=2){
+        if(i % 2 == 0){
+            return i;
 
         }
         else
-        return i;
+        console.log(i);
+        
+        
+        
     }   
 }
 show();
