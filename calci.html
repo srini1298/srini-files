@@ -1,0 +1,68 @@
+<html>
+<body>
+<style>
+#r {
+background-color:white;
+color:blue;
+padding:10px;
+text-align:center;
+margin:10px
+}
+#c {
+background-color:orange;
+color:black;
+text-align:center
+}
+#out {
+background-color:white;
+}
+
+</style>
+
+<script>
+function del(){
+document.getElementById("out").value="";
+}
+function show(input){
+document.getElementById("out").value+=input;
+}
+function cal(){
+var output=eval(document.getElementById("out").value);
+document.getElementById("out").value=output;
+}
+</script>
+<table border=1 cellspacing:"5px" cellpadding:"5px">
+<caption id="c">calculator</caption>
+<tr>
+<td colspan=3><input type="text" id="out"></td>
+<td><button type="button" onclick="del()">ac</button></td>
+</tr>
+<tr>
+<td><button type="button" onclick="show(1)" id="r">1</button></td>
+<td><button type="button" onclick="show(2)" id="r">2</button></td>
+<td><button type="button" onclick="show(3)" id="r">3</button></td>
+<td><button type="button" onclick="show('+')" id="r">+</button></td>
+</tr>
+<tr>
+<td><button type="button" onclick="show(4)" id="r">4</button></td>
+<td><button type="button" onclick="show(5)" id="r">5</button></td>
+<td><button type="button" onclick="show(6)" id="r">6</button></td>
+<td><button type="button" onclick="show('-')" id="r">-</button></td>
+</tr>
+<tr>
+<td><button type="button" onclick="show(7)" id="r">7</button></td>
+<td><button type="button" onclick="show(8)" id="r">8</button></td>
+<td><button type="button" onclick="show(9)" id="r">9</button></td>
+<td><button type="button" onclick="show(0)" id="r">0</button></td>
+</tr>
+<tr>
+<td><button type="button" onclick="show('*')" id="r">*</button></td>
+<td><button type="button" onclick="show('/')" id="r">/</button></td>
+<td><button type="button" onclick="show('%')" id="r">%</button></td>
+<td><button type="button" onclick="cal()" id="r">=</button></td>
+</tr>
+
+
+</table>
+</body>
+</html>
