@@ -1,0 +1,30 @@
+
+    .container{
+        border:1px solid brown;
+        padding:30px;
+        margin:3px;
+        background-color:pink;
+    }
+    
+    .btns{
+        padding :5px;
+        background-color:grey;
+        color: black;
+        width: 100%;
+    }
+    
+    
+    .form-control input{
+        display: block;
+        width: 100%;
+        padding:0px;
+        
+    }
+    
+    
+    .form-control.error input{
+        border: 1px solid red;
+    }
+    .form-control.success input{
+        border: 1px solid green;
+    }
